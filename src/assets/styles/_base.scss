@@ -1,0 +1,64 @@
+#app {
+    font-family: Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    text-align: center;
+    color: #2c3e50;
+    [class^='_container'] {
+        border: 0px solid brown;
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 100vw;
+    }
+    /* contenedor, ocupa todo el ancho del viewport */
+    ._containerFull {
+        max-width: 100vw;
+    }
+    /* contenedor, ocupa todo el ancho del viewport, como max 960, es como el de Bootstrap */
+    ._container960 {
+        max-width: 960px;
+    }
+}
+
+/* CARDS */
+.grid-list {
+    padding: 2rem 4%;
+    .grid-title {
+        padding: 1rem 0;
+        font-size: 1.35rem;
+        font-weight: 400;
+        text-align: left;
+    }
+    .grid-big {
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(10rem, 1fr));
+        grid-gap: 1rem;
+        .grid-card {
+            background-color: #eee;
+        }
+    }
+    .grid-medium {
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(10rem, 1fr));
+        grid-gap: 1rem;
+        .grid-card {
+            background-color: #eee;
+        }
+    }
+
+    .grid-line {
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-template-rows: repeat(auto-fill, 1fr);
+        grid-gap: 1rem;
+        .grid-card {
+            background-color: #eee;
+        }
+    }
+}

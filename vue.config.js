@@ -1,3 +1,10 @@
 module.exports = {
-  transpileDependencies: true,
+    transpileDependencies: true,
+    css: {
+        loaderOptions: {
+            scss: {
+                additionalData: `@import "@/assets/styles/app.scss";`
+            }
+        }
+    }
 };
